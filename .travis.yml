@@ -10,12 +10,12 @@ script:
   - docker run service-image npm run test -- --coverage
 
 deploy:
-  - provider: elasticbeanstalk
-  - region: "us-east-2"
-  - app: "node-app"
-  - env: "Nodeapp-env"
-  - bucket_name: "elasticbeanstalk-us-east-2-089417250341"
-  - bucket_path: "node-app"
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "node-app"
+  env: "Nodeapp-env"
+  bucket_name: "elasticbeanstalk-us-east-2-089417250341"
+  bucket_path: "node-app"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
