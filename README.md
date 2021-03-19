@@ -1,5 +1,7 @@
 # Node app service
 
+[![Build Status](https://travis-ci.com/sebastiansuarezGL/node-app-service.svg?branch=main)](https://travis-ci.com/sebastiansuarezGL/node-app-service)
+
 - [Node app service](#node-app-service)
   - [Docker](#docker)
   - [Manual](#manual)
