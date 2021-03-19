@@ -1,19 +1,12 @@
 version: '3'
 services: 
   backend:
-    build: 
-      context: .
-      dockerfile: Dockerfile.dev
-    env_file: .env
+    build: .
     environment: 
       MONGO_CONNECTION_STRING: mongodb://mongo/test
-    volumes:
-      - /usr/app/node_modules
-      - .:/usr/app/
+      PORT: 1337
     ports:
       - '1337:1337'
   mongo:
     image: mongo:4.4
     restart: always
-    ports:
-      - '27017:27017'
