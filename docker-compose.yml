@@ -4,9 +4,9 @@ services:
     build: .
     environment: 
       MONGO_CONNECTION_STRING: mongodb://mongo/test
-      PORT: 1337
+      PORT: 80
     ports:
-      - '1337:1337'
+      - '80:80'
   mongo:
     image: mongo:4.4
     restart: always
