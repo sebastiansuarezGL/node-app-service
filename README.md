@@ -10,7 +10,7 @@
 
 ## Docker
 
-This project is prepared to use docker right out of the box, simple use ``docker-compose up``
+This project is prepared to use docker right out of the box, simple use `` docker-compose -f docker-compose.dev.yml up --build``
 
 ## Manual
 

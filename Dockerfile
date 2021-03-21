@@ -1,7 +1,11 @@
 FROM node:alpine
 WORKDIR /usr/app
-COPY . .
+COPY package.json .
+ENV NODE_ENV=development
 RUN npm install
+COPY tsconfig.json .
+COPY src src
+COPY bin bin
 RUN npm run build
 
 FROM node:alpine
