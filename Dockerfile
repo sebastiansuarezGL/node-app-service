@@ -13,4 +13,5 @@ WORKDIR /usr/app
 COPY --from=0 /usr/app/dist .
 COPY package.json package.json
 RUN npm install --only=prod
+EXPOSE 1337
 CMD [ "npm", "start" ]
